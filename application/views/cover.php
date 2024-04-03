@@ -2,12 +2,10 @@
 	<div class="col col-sm-12">
 		<div class="card">
 			<div class="card card-header">
-				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="<?= base_url('Home'); ?>">Data</a></li>
-						<li class="breadcrumb-item active" aria-current="page"><?= $title; ?> </li>
-					</ol>
-				</nav>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="<?= base_url('Home'); ?>">Data</a></li>
+					<li class="breadcrumb-item active" aria-current="page"><?= $title; ?> </li>
+				</ol>
 			</div>
 			<div class="card card-body">
 				<ul class="nav nav-tabs">
@@ -56,10 +54,11 @@
 						<div id="printDiv" class="card card-body border" style="width: 216mm;height: 356mm;font-family: 'Times New Roman', Times, serif" class="printArea">
 							<!-- header -->
 							<div class="row" style="font-weight: bolder; font-size: 30px;">
-								<div class="col-sm-3">
+								<div class="col-sm-2">
+									&nbsp;&nbsp;&nbsp;
 									<img src="<?= base_url('assets/img/logo-krw.png'); ?>" style="width: 95px;position: absolute;">
 								</div>
-								<div class="col-sm-9 text-center" style="line-height: 100%;">
+								<div class="col-sm-10 text-center" style="line-height: 100%;">
 									<span>PEMERINTAH KABUPATEN KARAWANG</span>	<br>							
 									<span>DINAS PEKERJAAN UMUM DAN PENATAAN RUANG</span><br>
 									<span>UPTD LABORATORIUM BAHAN KONSTRUKSI</span>	<br>							
@@ -70,7 +69,7 @@
 							<!-- watermark -->
 							<img src="<?= base_url('assets/img/watermark-pupr.png'); ?>" class="watermark">
 							<?php 
-								for($i=0;$i<55;$i++){
+								for($i=0;$i<42;$i++){
 									echo "<br>";
 								}
 							?>
@@ -123,11 +122,12 @@
 
 
 <script type="text/javascript">
-	document.getElementById("doPrint").addEventListener("click", function() {
-	     var printContents = document.getElementById('printDiv').innerHTML;
-	     var originalContents = document.body.innerHTML;
-	     document.body.innerHTML = printContents;
-	     window.print();
-	     document.body.innerHTML = originalContents;
+	document.getElementById("doPrint").addEventListener("click", function(e) {
+		e.preventDefault(); // Prevent the default behavior
+	    var printContents = document.getElementById('printDiv').innerHTML;
+	    var originalContents = document.body.innerHTML;
+	    document.body.innerHTML = printContents;
+	    window.print();
+	    document.body.innerHTML = originalContents;
 	});
 </script>

@@ -20,7 +20,7 @@
     <!-- online source -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
@@ -71,8 +71,12 @@
 		   }
 
 		    @page {
-			   	size: 216mm 356mm;
-			   	margin: 2cm;
+			   	size: A4;
+    			margin: 0.5cm;
+			}
+			  
+			@page :footer {
+			    display: none;
 			}
 
 		}
@@ -122,7 +126,7 @@
 </head>
 <body style="background-color: whitesmoke;">
 
-<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: black;">
     <!-- Brand -->
     <img src="<?= base_url('assets/img/pupr.jpg'); ?>" style="width:30px;" class="navbar-brand">
     <a class="navbar-brand" href="<?= base_url('home'); ?>"> Laporan Inti | Admin PUPR </a>
@@ -156,6 +160,8 @@
         </ul>
     </div>
 </nav>
+
+<br>
 
 
 <script type="text/javascript">

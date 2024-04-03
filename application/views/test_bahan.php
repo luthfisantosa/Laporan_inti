@@ -59,7 +59,7 @@
 								<div class="col-sm-12 text-center" style="line-height: 100%;">
 									HASIL PENGUJIAN BAHAN BASE COURSE (LPA)	
 									<span>KEGIATAN <?= strtoupper($row->kegiatan); ?></span><br>
-									<span>"LOKASI <?= strtoupper($row->nama_lokasi); ?></span><br>
+									<span>"LOKASI <?= strtoupper($row->nama_lokasi); ?> "</span><br>
 									<span>KABUPATEN KARAWANG TAHUN ANGGARAN <?= substr($row->tanggal, -4); ?>	</span><br>
 									<span style="font-size: 25px;font-weight: lighter;">Jalan Raya Kosambi KM. 14 Karawang</span>	
 								</div>
@@ -93,7 +93,7 @@
 									Rekapitulasi ......................................................
 							</p>
 							<!-- footer -->
-							<div style="padding-bottom: 90%;">
+							<div style="padding-bottom: 50%;">
 								
 							</div>
 							<?php
