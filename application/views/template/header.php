@@ -49,6 +49,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/helpers.esm.min.js" integrity="sha512-vxCPccgWacJoW2HlxhlKKtczdzvcg0r1UuB9LfNGt6vsDbgLfSFxKlolUS2mqKNXrOK5b93S45309T+V5BhueA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
  	<style type="text/css">
+ 		body {
+		    font-family: "verdana", sans-serif;
+		}
+
  		@media print{
 	 		header{
 	 			padding-top: -200px;
@@ -129,7 +133,7 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: black;">
     <!-- Brand -->
     <img src="<?= base_url('assets/img/pupr.jpg'); ?>" style="width:30px;" class="navbar-brand">
-    <a class="navbar-brand" href="<?= base_url('home'); ?>"> Laporan Inti | Admin PUPR </a>
+    <a class="navbar-brand" href="<?= base_url('Home/Landing'); ?>"> Laporan Inti | Admin PUPR </a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">

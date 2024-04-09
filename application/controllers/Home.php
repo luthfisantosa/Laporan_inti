@@ -39,6 +39,16 @@ class Home extends CI_Controller {
 		$this->load->view('template/footer', $data);
 	}
 
+	public function landing()
+	{
+		$data["title"] = "Landing";
+		$data["status_nav"] = "home";
+
+		$this->load->view('template/header', $data);
+		$this->load->view('landing', $data);
+		$this->load->view('template/footer', $data);
+	}
+
 	public function printPreview()
 	{
 		
