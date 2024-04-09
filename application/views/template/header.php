@@ -50,7 +50,7 @@
 
  	<style type="text/css">
  		body {
-		    font-family: "verdana", sans-serif;
+		    font-family: "nunito", sans-serif;
 		}
 
  		@media print{
@@ -130,7 +130,7 @@
 </head>
 <body style="background-color: whitesmoke;">
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: black;">
+<nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #e6f2ff;">
     <!-- Brand -->
     <img src="<?= base_url('assets/img/pupr.jpg'); ?>" style="width:30px;" class="navbar-brand">
     <a class="navbar-brand" href="<?= base_url('Home/Landing'); ?>"> Laporan Inti | Admin PUPR </a>

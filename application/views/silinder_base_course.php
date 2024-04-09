@@ -123,24 +123,22 @@
 						<div class='canvas' id="printDiv" style="width:863px; border:3px solid; padding: 20px;">
 							<!-- header -->
 							<div class="row" style="font-weight: bolder; font-size: 30px;">
-								<div class="col-sm-3">
+								<div class="col-sm-1">
 									<img src="<?= base_url('assets/img/logo-krw.png'); ?>" style="width: 95px;position: absolute;">
 								</div>
-								<div class="col-sm-9 text-center" style="line-height: 100%;">
-									<span>PEMERINTAH KABUPATEN KARAWANG</span>	<br>							
+								<div class="col-sm-11 text-center" style="line-height: 100%;">
+									<span>PEMERINTAH KABUPATEN KARAWANG</span><br>							
 									<span>DINAS PEKERJAAN UMUM DAN PENATAAN RUANG</span><br>
-									<span>UPTD LABORATORIUM BAHAN KONSTRUKSI</span>	<br>							
+									<span>UPTD LABORATORIUM BAHAN KONSTRUKSI</span><br>							
 									<span style="font-size: 25px;font-weight: lighter;">Jalan Raya Kosambi KM. 14 Karawang</span>	
 								</div>
 							</div>
 							<hr style="border-top: 10px double #8c8b8b;">
 							<div class="row" style="font-weight: bolder; font-size: 25px;">
-								<div class="col-sm-4"></div>
-								<div class="col-sm-4 text-center">
-									<u>PEMERIKSAAN KEPADATAN DI LAPANGAN DENGAN SAND CONE</u>
+								<div class="col-sm-12 text-center">
+									<small><u>PEMERIKSAAN KEPADATAN DI LAPANGAN DENGAN SAND CONE</u></small>
 								</div>
-								<div class="col-sm-4"></div>
-							</div><br>
+							</div>
 							<div class="row" style="font-size: 18px;">
 								<div class="col-sm-12">
 									<table cellpadding="2" >
@@ -260,7 +258,7 @@
 											<td style="width: 50px;"></td><td style="width: 50px;"></td><td style="width: 50px;"></td>
 										</tr>
 									</table>
-									<br><br><br>
+									<br>
 									<table cellpadding="5" border="1">
 										<tr>
 											<td>No</td><td style="width:400px;">Nomor Test/STA</td>
@@ -357,29 +355,27 @@
 						</div>
 					</div>
 				</div>
-				<br> <!-- page 2 -->
+				<!-- page 2 -->
 				<div class="container">
 					<div class="col-sm-9">
 						<div class='canvas' id="printDiv2" style="width:863px; border:3px solid; padding: 20px;">
 							<!-- header -->
 							<div class="row" style="font-weight: bolder; font-size: 30px;">
-								<div class="col-sm-3">
+								<div class="col-sm-1">
 									<img src="<?= base_url('assets/img/logo-krw.png'); ?>" style="width: 95px;position: absolute;">
 								</div>
-								<div class="col-sm-9 text-center" style="line-height: 100%;">
-									<span>PEMERINTAH KABUPATEN KARAWANG</span>	<br>							
+								<div class="col-sm-11 text-center" style="line-height: 100%;">
+									<span>PEMERINTAH KABUPATEN KARAWANG</span><br>							
 									<span>DINAS PEKERJAAN UMUM DAN PENATAAN RUANG</span><br>
-									<span>UPTD LABORATORIUM BAHAN KONSTRUKSI</span>	<br>							
+									<span>UPTD LABORATORIUM BAHAN KONSTRUKSI</span><br>							
 									<span style="font-size: 25px;font-weight: lighter;">Jalan Raya Kosambi KM. 14 Karawang</span>	
 								</div>
 							</div>
 							<hr style="border-top: 10px double #8c8b8b;">
 							<div class="row" style="font-weight: bolder; font-size: 25px;">
-								<div class="col-sm-4"></div>
-								<div class="col-sm-4 text-center">
-									<u>REKAPITULASI TEST KEPADATAN LAPANGAN</u>
+								<div class="col-sm-12 text-center">
+									<small><u>REKAPITULASI TEST KEPADATAN LAPANGAN</u></small>
 								</div>
-								<div class="col-sm-4"></div>
 							</div><br>
 							<div class="row" style="font-size: 18px;">
 								<div class="col-sm-12">
@@ -515,7 +511,7 @@
 		     var printContents = document.getElementById('printDiv').innerHTML;
 		     var printContents2 = document.getElementById('printDiv2').innerHTML;
 		     var originalContents = document.body.innerHTML;
-		     document.body.innerHTML = printContents+'<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>'+printContents2;
+		     document.body.innerHTML = printContents+'<br><br>'+printContents2;
 		     window.print();
 		     document.body.innerHTML = originalContents;
 		});
